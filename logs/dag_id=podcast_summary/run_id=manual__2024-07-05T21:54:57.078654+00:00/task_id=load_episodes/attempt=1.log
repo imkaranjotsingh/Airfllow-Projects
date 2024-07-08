@@ -1,0 +1,23 @@
+[2024-07-05T21:55:00.319+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-05T21:55:00.328+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: podcast_summary.load_episodes manual__2024-07-05T21:54:57.078654+00:00 [queued]>
+[2024-07-05T21:55:00.331+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: podcast_summary.load_episodes manual__2024-07-05T21:54:57.078654+00:00 [queued]>
+[2024-07-05T21:55:00.332+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-05T21:55:00.337+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): load_episodes> on 2024-07-05 21:54:57.078654+00:00
+[2024-07-05T21:55:00.341+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=14405) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-05T21:55:00.342+0000] {standard_task_runner.py:63} INFO - Started process 14409 to run task
+[2024-07-05T21:55:00.343+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'podcast_summary', 'load_episodes', 'manual__2024-07-05T21:54:57.078654+00:00', '--job-id', '141', '--raw', '--subdir', 'DAGS_FOLDER/podcast_summary.py', '--cfg-path', '/tmp/tmp7cl__4gn']
+[2024-07-05T21:55:00.345+0000] {standard_task_runner.py:91} INFO - Job 141: Subtask load_episodes
+[2024-07-05T21:55:00.368+0000] {task_command.py:426} INFO - Running <TaskInstance: podcast_summary.load_episodes manual__2024-07-05T21:54:57.078654+00:00 [running]> on host 4f6b501c5f6b
+[2024-07-05T21:55:00.469+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='podcast_summary' AIRFLOW_CTX_TASK_ID='load_episodes' AIRFLOW_CTX_EXECUTION_DATE='2024-07-05T21:54:57.078654+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-05T21:54:57.078654+00:00'
+[2024-07-05T21:55:00.473+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-05T21:55:00.485+0000] {base.py:84} INFO - Using connection ID 'podcasts' for task execution.
+[2024-07-05T21:55:00.503+0000] {base.py:84} INFO - Using connection ID 'podcasts' for task execution.
+[2024-07-05T21:55:00.504+0000] {sql.py:593} INFO - Done loading. Loaded a total of 0 rows into episodes
+[2024-07-05T21:55:00.504+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-05T21:55:00.504+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-05T21:55:00.510+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=podcast_summary, task_id=load_episodes, run_id=manual__2024-07-05T21:54:57.078654+00:00, execution_date=20240705T215457, start_date=20240705T215500, end_date=20240705T215500
+[2024-07-05T21:55:00.526+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-05T21:55:00.538+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-05T21:55:00.539+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

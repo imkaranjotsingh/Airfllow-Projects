@@ -1,0 +1,21 @@
+[2024-06-25T23:01:33.105+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-06-25T23:01:33.112+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: welcome_dag.print_random_quote scheduled__2024-06-24T23:00:00+00:00 [queued]>
+[2024-06-25T23:01:33.115+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: welcome_dag.print_random_quote scheduled__2024-06-24T23:00:00+00:00 [queued]>
+[2024-06-25T23:01:33.115+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-06-25T23:01:33.120+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): print_random_quote> on 2024-06-24 23:00:00+00:00
+[2024-06-25T23:01:33.123+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=39806) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-06-25T23:01:33.124+0000] {standard_task_runner.py:63} INFO - Started process 39808 to run task
+[2024-06-25T23:01:33.124+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'welcome_dag', 'print_random_quote', 'scheduled__2024-06-24T23:00:00+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/Welcome_dag.py', '--cfg-path', '/tmp/tmpdjsw_h5v']
+[2024-06-25T23:01:33.125+0000] {standard_task_runner.py:91} INFO - Job 84: Subtask print_random_quote
+[2024-06-25T23:01:33.144+0000] {task_command.py:426} INFO - Running <TaskInstance: welcome_dag.print_random_quote scheduled__2024-06-24T23:00:00+00:00 [running]> on host 39cf80e3d564
+[2024-06-25T23:01:33.173+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='welcome_dag' AIRFLOW_CTX_TASK_ID='print_random_quote' AIRFLOW_CTX_EXECUTION_DATE='2024-06-24T23:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-06-24T23:00:00+00:00'
+[2024-06-25T23:01:33.174+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-06-25T23:01:33.479+0000] {logging_mixin.py:188} INFO - Quote of the day: "I do not believe in a fate that falls on men however they act; but I do believe in a fate that falls on them unless they act."
+[2024-06-25T23:01:33.481+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-06-25T23:01:33.482+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-06-25T23:01:33.493+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=welcome_dag, task_id=print_random_quote, run_id=scheduled__2024-06-24T23:00:00+00:00, execution_date=20240624T230000, start_date=20240625T230133, end_date=20240625T230133
+[2024-06-25T23:01:33.547+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-06-25T23:01:33.566+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-25T23:01:33.567+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

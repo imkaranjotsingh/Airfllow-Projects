@@ -1,0 +1,120 @@
+[2024-07-08T00:29:37.221+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-08T00:29:37.229+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: podcast_summary.download_episodes scheduled__2024-07-07T00:00:00+00:00 [queued]>
+[2024-07-08T00:29:37.233+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: podcast_summary.download_episodes scheduled__2024-07-07T00:00:00+00:00 [queued]>
+[2024-07-08T00:29:37.233+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-08T00:29:37.237+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): download_episodes> on 2024-07-07 00:00:00+00:00
+[2024-07-08T00:29:37.240+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=24148) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-07-08T00:29:37.241+0000] {standard_task_runner.py:63} INFO - Started process 24152 to run task
+[2024-07-08T00:29:37.242+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'podcast_summary', 'download_episodes', 'scheduled__2024-07-07T00:00:00+00:00', '--job-id', '170', '--raw', '--subdir', 'DAGS_FOLDER/podcast_summary.py', '--cfg-path', '/tmp/tmpjnurimq3']
+[2024-07-08T00:29:37.244+0000] {standard_task_runner.py:91} INFO - Job 170: Subtask download_episodes
+[2024-07-08T00:29:37.264+0000] {task_command.py:426} INFO - Running <TaskInstance: podcast_summary.download_episodes scheduled__2024-07-07T00:00:00+00:00 [running]> on host 4f6b501c5f6b
+[2024-07-08T00:29:37.300+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='podcast_summary' AIRFLOW_CTX_TASK_ID='download_episodes' AIRFLOW_CTX_EXECUTION_DATE='2024-07-07T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-07-07T00:00:00+00:00'
+[2024-07-08T00:29:37.301+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-08T00:29:37.301+0000] {podcast_summary.py:64} INFO - how-many-native-people-live-in-the-u-s-good-question.mp3
+[2024-07-08T00:29:37.301+0000] {podcast_summary.py:66} INFO - dags/episodes/how-many-native-people-live-in-the-u-s-good-question.mp3
+[2024-07-08T00:29:37.301+0000] {podcast_summary.py:64} INFO - the-wages-vs-inflation-horse-race.mp3
+[2024-07-08T00:29:37.302+0000] {podcast_summary.py:66} INFO - dags/episodes/the-wages-vs-inflation-horse-race.mp3
+[2024-07-08T00:29:37.302+0000] {podcast_summary.py:64} INFO - the-federal-reserves-fork-in-the-road.mp3
+[2024-07-08T00:29:37.302+0000] {podcast_summary.py:66} INFO - dags/episodes/the-federal-reserves-fork-in-the-road.mp3
+[2024-07-08T00:29:37.302+0000] {podcast_summary.py:64} INFO - jobs-report-stability-labor-market.mp3
+[2024-07-08T00:29:37.302+0000] {podcast_summary.py:66} INFO - dags/episodes/jobs-report-stability-labor-market.mp3
+[2024-07-08T00:29:37.302+0000] {podcast_summary.py:64} INFO - a-rigged-version-of-monopoly.mp3
+[2024-07-08T00:29:37.303+0000] {podcast_summary.py:66} INFO - dags/episodes/a-rigged-version-of-monopoly.mp3
+[2024-07-08T00:29:37.303+0000] {podcast_summary.py:64} INFO - homelessness-criminalized-as-home-sales-fall-and-prices-rise.mp3
+[2024-07-08T00:29:37.303+0000] {podcast_summary.py:66} INFO - dags/episodes/homelessness-criminalized-as-home-sales-fall-and-prices-rise.mp3
+[2024-07-08T00:29:37.303+0000] {podcast_summary.py:64} INFO - scotus-curbs-regulatory-agencies-powers-again.mp3
+[2024-07-08T00:29:37.303+0000] {podcast_summary.py:66} INFO - dags/episodes/scotus-curbs-regulatory-agencies-powers-again.mp3
+[2024-07-08T00:29:37.303+0000] {podcast_summary.py:64} INFO - how-about-those-new-tariffs.mp3
+[2024-07-08T00:29:37.303+0000] {podcast_summary.py:66} INFO - dags/episodes/how-about-those-new-tariffs.mp3
+[2024-07-08T00:29:37.304+0000] {podcast_summary.py:64} INFO - why-so-miserable.mp3
+[2024-07-08T00:29:37.304+0000] {podcast_summary.py:66} INFO - dags/episodes/why-so-miserable.mp3
+[2024-07-08T00:29:37.304+0000] {podcast_summary.py:64} INFO - breaking-ground-red-lake-nations-solar-powered-future.mp3
+[2024-07-08T00:29:37.304+0000] {podcast_summary.py:66} INFO - dags/episodes/breaking-ground-red-lake-nations-solar-powered-future.mp3
+[2024-07-08T00:29:37.304+0000] {podcast_summary.py:64} INFO - last-resort.mp3
+[2024-07-08T00:29:37.304+0000] {podcast_summary.py:66} INFO - dags/episodes/last-resort.mp3
+[2024-07-08T00:29:37.304+0000] {podcast_summary.py:64} INFO - bill-gates-goes-nuclear-turning-a-small-coal-town-upside-down.mp3
+[2024-07-08T00:29:37.304+0000] {podcast_summary.py:66} INFO - dags/episodes/bill-gates-goes-nuclear-turning-a-small-coal-town-upside-down.mp3
+[2024-07-08T00:29:37.305+0000] {podcast_summary.py:64} INFO - credit-card-debt-data-reveals-two-different-americas.mp3
+[2024-07-08T00:29:37.305+0000] {podcast_summary.py:66} INFO - dags/episodes/credit-card-debt-data-reveals-two-different-americas.mp3
+[2024-07-08T00:29:37.305+0000] {podcast_summary.py:64} INFO - will-mortgage-rates-follow-bond-yields-down.mp3
+[2024-07-08T00:29:37.305+0000] {podcast_summary.py:66} INFO - dags/episodes/will-mortgage-rates-follow-bond-yields-down.mp3
+[2024-07-08T00:29:37.305+0000] {podcast_summary.py:64} INFO - the-economy-doesnt-love-the-heat-either.mp3
+[2024-07-08T00:29:37.305+0000] {podcast_summary.py:66} INFO - dags/episodes/the-economy-doesnt-love-the-heat-either.mp3
+[2024-07-08T00:29:37.305+0000] {podcast_summary.py:64} INFO - will-i-ever-own-a-home.mp3
+[2024-07-08T00:29:37.305+0000] {podcast_summary.py:66} INFO - dags/episodes/will-i-ever-own-a-home.mp3
+[2024-07-08T00:29:37.306+0000] {podcast_summary.py:64} INFO - whats-good-for-the-economy-might-not-be-good-for-job-seekers.mp3
+[2024-07-08T00:29:37.306+0000] {podcast_summary.py:66} INFO - dags/episodes/whats-good-for-the-economy-might-not-be-good-for-job-seekers.mp3
+[2024-07-08T00:29:37.306+0000] {podcast_summary.py:64} INFO - powell-holds-off-on-rate-cuts.mp3
+[2024-07-08T00:29:37.306+0000] {podcast_summary.py:66} INFO - dags/episodes/powell-holds-off-on-rate-cuts.mp3
+[2024-07-08T00:29:37.306+0000] {podcast_summary.py:64} INFO - adjusting-for-inflation-dr-evil.mp3
+[2024-07-08T00:29:37.306+0000] {podcast_summary.py:66} INFO - dags/episodes/adjusting-for-inflation-dr-evil.mp3
+[2024-07-08T00:29:37.306+0000] {podcast_summary.py:64} INFO - the-clean-energy-boom-cant-come-fast-enough.mp3
+[2024-07-08T00:29:37.306+0000] {podcast_summary.py:66} INFO - dags/episodes/the-clean-energy-boom-cant-come-fast-enough.mp3
+[2024-07-08T00:29:37.307+0000] {podcast_summary.py:64} INFO - better-than-expected-job-growth.mp3
+[2024-07-08T00:29:37.307+0000] {podcast_summary.py:66} INFO - dags/episodes/better-than-expected-job-growth.mp3
+[2024-07-08T00:29:37.307+0000] {podcast_summary.py:64} INFO - what-do-interest-rate-cuts-in-europe-mean-for-the-u-s.mp3
+[2024-07-08T00:29:37.307+0000] {podcast_summary.py:66} INFO - dags/episodes/what-do-interest-rate-cuts-in-europe-mean-for-the-u-s.mp3
+[2024-07-08T00:29:37.307+0000] {podcast_summary.py:64} INFO - lone-star-stock-exchange.mp3
+[2024-07-08T00:29:37.307+0000] {podcast_summary.py:66} INFO - dags/episodes/lone-star-stock-exchange.mp3
+[2024-07-08T00:29:37.307+0000] {podcast_summary.py:64} INFO - the-great-stay.mp3
+[2024-07-08T00:29:37.308+0000] {podcast_summary.py:66} INFO - dags/episodes/the-great-stay.mp3
+[2024-07-08T00:29:37.308+0000] {podcast_summary.py:64} INFO - who-benefits-from-mortgage-interest-tax-breaks.mp3
+[2024-07-08T00:29:37.308+0000] {podcast_summary.py:66} INFO - dags/episodes/who-benefits-from-mortgage-interest-tax-breaks.mp3
+[2024-07-08T00:29:37.308+0000] {podcast_summary.py:64} INFO - slowly-but-surely-the-economy-is-cooling.mp3
+[2024-07-08T00:29:37.308+0000] {podcast_summary.py:66} INFO - dags/episodes/slowly-but-surely-the-economy-is-cooling.mp3
+[2024-07-08T00:29:37.308+0000] {podcast_summary.py:64} INFO - revised-1st-quarter-gdp-shows-slower-growth.mp3
+[2024-07-08T00:29:37.308+0000] {podcast_summary.py:66} INFO - dags/episodes/revised-1st-quarter-gdp-shows-slower-growth.mp3
+[2024-07-08T00:29:37.308+0000] {podcast_summary.py:64} INFO - breaking-ground-change-isnt-coming-its-here.mp3
+[2024-07-08T00:29:37.309+0000] {podcast_summary.py:66} INFO - dags/episodes/breaking-ground-change-isnt-coming-its-here.mp3
+[2024-07-08T00:29:37.309+0000] {podcast_summary.py:64} INFO - what-could-happen-if-israel-severs-banking-ties-with-palestinian.mp3
+[2024-07-08T00:29:37.309+0000] {podcast_summary.py:66} INFO - dags/episodes/what-could-happen-if-israel-severs-banking-ties-with-palestinian.mp3
+[2024-07-08T00:29:37.309+0000] {podcast_summary.py:64} INFO - whys-my-coffee-so-expensive.mp3
+[2024-07-08T00:29:37.309+0000] {podcast_summary.py:66} INFO - dags/episodes/whys-my-coffee-so-expensive.mp3
+[2024-07-08T00:29:37.309+0000] {podcast_summary.py:64} INFO - for-female-workers-an-ailing-feeling-about-financial-health.mp3
+[2024-07-08T00:29:37.309+0000] {podcast_summary.py:66} INFO - dags/episodes/for-female-workers-an-ailing-feeling-about-financial-health.mp3
+[2024-07-08T00:29:37.309+0000] {podcast_summary.py:64} INFO - bad-housing-news-comes-in-threes.mp3
+[2024-07-08T00:29:37.310+0000] {podcast_summary.py:66} INFO - dags/episodes/bad-housing-news-comes-in-threes.mp3
+[2024-07-08T00:29:37.310+0000] {podcast_summary.py:64} INFO - accommodations-for-long-covid.mp3
+[2024-07-08T00:29:37.310+0000] {podcast_summary.py:66} INFO - dags/episodes/accommodations-for-long-covid.mp3
+[2024-07-08T00:29:37.310+0000] {podcast_summary.py:64} INFO - the-complexity-of-succession-planning.mp3
+[2024-07-08T00:29:37.310+0000] {podcast_summary.py:66} INFO - dags/episodes/the-complexity-of-succession-planning.mp3
+[2024-07-08T00:29:37.310+0000] {podcast_summary.py:64} INFO - the-future-of-dining.mp3
+[2024-07-08T00:29:37.310+0000] {podcast_summary.py:66} INFO - dags/episodes/the-future-of-dining.mp3
+[2024-07-08T00:29:37.310+0000] {podcast_summary.py:64} INFO - the-granddaddy-of-all-stock-indices.mp3
+[2024-07-08T00:29:37.311+0000] {podcast_summary.py:66} INFO - dags/episodes/the-granddaddy-of-all-stock-indices.mp3
+[2024-07-08T00:29:37.311+0000] {podcast_summary.py:64} INFO - walmart-wayfair-and-wool.mp3
+[2024-07-08T00:29:37.311+0000] {podcast_summary.py:66} INFO - dags/episodes/walmart-wayfair-and-wool.mp3
+[2024-07-08T00:29:37.311+0000] {podcast_summary.py:64} INFO - the-inflation-cooldown-weve-been-waiting-for.mp3
+[2024-07-08T00:29:37.311+0000] {podcast_summary.py:66} INFO - dags/episodes/the-inflation-cooldown-weve-been-waiting-for.mp3
+[2024-07-08T00:29:37.311+0000] {podcast_summary.py:64} INFO - biden-hits-chinese-goods-with-new-tariffs.mp3
+[2024-07-08T00:29:37.312+0000] {podcast_summary.py:66} INFO - dags/episodes/biden-hits-chinese-goods-with-new-tariffs.mp3
+[2024-07-08T00:29:37.312+0000] {podcast_summary.py:64} INFO - consumer-sentiment-slumps.mp3
+[2024-07-08T00:29:37.312+0000] {podcast_summary.py:66} INFO - dags/episodes/consumer-sentiment-slumps.mp3
+[2024-07-08T00:29:37.312+0000] {podcast_summary.py:64} INFO - is-the-u-s-ready-to-be-a-chipmaking-superpower.mp3
+[2024-07-08T00:29:37.312+0000] {podcast_summary.py:66} INFO - dags/episodes/is-the-u-s-ready-to-be-a-chipmaking-superpower.mp3
+[2024-07-08T00:29:37.312+0000] {podcast_summary.py:64} INFO - democracy-is-critical-to-prosperity-treasury-secretary-says.mp3
+[2024-07-08T00:29:37.313+0000] {podcast_summary.py:66} INFO - dags/episodes/democracy-is-critical-to-prosperity-treasury-secretary-says.mp3
+[2024-07-08T00:29:37.313+0000] {podcast_summary.py:64} INFO - rents-outpace-wages-in-big-cities-across-the-u-s.mp3
+[2024-07-08T00:29:37.313+0000] {podcast_summary.py:66} INFO - dags/episodes/rents-outpace-wages-in-big-cities-across-the-u-s.mp3
+[2024-07-08T00:29:37.313+0000] {podcast_summary.py:64} INFO - a-little-more-time-for-social-security-and-medicare-funds.mp3
+[2024-07-08T00:29:37.313+0000] {podcast_summary.py:66} INFO - dags/episodes/a-little-more-time-for-social-security-and-medicare-funds.mp3
+[2024-07-08T00:29:37.313+0000] {podcast_summary.py:64} INFO - job-satisfaction-survey.mp3
+[2024-07-08T00:29:37.313+0000] {podcast_summary.py:66} INFO - dags/episodes/job-satisfaction-survey.mp3
+[2024-07-08T00:29:37.314+0000] {podcast_summary.py:64} INFO - why-government-benefits-are-likely-to-stick-around.mp3
+[2024-07-08T00:29:37.314+0000] {podcast_summary.py:66} INFO - dags/episodes/why-government-benefits-are-likely-to-stick-around.mp3
+[2024-07-08T00:29:37.314+0000] {podcast_summary.py:64} INFO - breaking-ground-where-are-all-the-jobs.mp3
+[2024-07-08T00:29:37.314+0000] {podcast_summary.py:66} INFO - dags/episodes/breaking-ground-where-are-all-the-jobs.mp3
+[2024-07-08T00:29:37.314+0000] {podcast_summary.py:64} INFO - breaking-ground-the-plants-were-there-first.mp3
+[2024-07-08T00:29:37.315+0000] {podcast_summary.py:66} INFO - dags/episodes/breaking-ground-the-plants-were-there-first.mp3
+[2024-07-08T00:29:37.315+0000] {podcast_summary.py:64} INFO - a-visit-to-the-silicon-desert.mp3
+[2024-07-08T00:29:37.315+0000] {podcast_summary.py:66} INFO - dags/episodes/a-visit-to-the-silicon-desert.mp3
+[2024-07-08T00:29:37.315+0000] {podcast_summary.py:64} INFO - keep-on-truckin.mp3
+[2024-07-08T00:29:37.315+0000] {podcast_summary.py:66} INFO - dags/episodes/keep-on-truckin.mp3
+[2024-07-08T00:29:37.315+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-07-08T00:29:37.315+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-08T00:29:37.318+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=podcast_summary, task_id=download_episodes, run_id=scheduled__2024-07-07T00:00:00+00:00, execution_date=20240707T000000, start_date=20240708T002937, end_date=20240708T002937
+[2024-07-08T00:29:37.343+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-08T00:29:37.351+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-08T00:29:37.351+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
